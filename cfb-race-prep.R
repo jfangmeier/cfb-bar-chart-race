@@ -1,5 +1,4 @@
 library(tidyverse)
-library(janitor)
 library(zoo)
 library(RcppRoll)
 library(gganimate)
@@ -261,7 +260,7 @@ alltime_wins_chart <- team_record_final %>%
   coord_cartesian(clip = "off", expand = FALSE) +
   coord_flip() +
   labs(
-    title = 'Most College Football Losses',
+    title = 'Most College Football Wins',
     subtitle = 'Cumulative Total of Major Program Games',
     caption = 'bar colors represent conferences\ndata source: Sports Reference | graphic by @joshfangmeier',
     x = '',
